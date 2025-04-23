@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var words = ["Software Developer", "Student", "Tennis Player"];
+  var words = ["Student", "Web Dev", "Tennis Player"];
   var i = 0;
   var txt = '';
   var wordIndex = 0;
