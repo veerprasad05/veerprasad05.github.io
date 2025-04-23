@@ -163,15 +163,15 @@
 
 @media (min-width: 992px) {
   .project-title {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
   
   .project-summary {
-    font-size: 2.4rem;
+    font-size: 1rem;
   }
   
   .project-details li {
-    font-size: 2.4rem;
+    font-size: 1rem;
   }
 }
 
@@ -185,7 +185,7 @@
 
 @media (min-width: 992px) {
   .project-details li::before {
-    font-size: 2.4rem;
+    font-size: 1rem;
   }
 }
 
@@ -208,8 +208,8 @@
 
 @media (min-width: 992px) {
   .tag {
-    font-size: 1.8rem;
-    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
   }
 }
 
