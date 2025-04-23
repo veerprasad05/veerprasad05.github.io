@@ -1,0 +1,309 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Base size for all screens */
+.social-icon {
+  width: 32px; /* Your current icon size */
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .social-icon {
+    width: 38px;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) {
+  .social-icon {
+    width: 44px;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .social-icon {
+    width: 50px;
+  }
+}
+
+/* For extra-extra large screens */
+@media (min-width: 1400px) {
+  .social-icon {
+    width: 58px;
+  }
+}
+/* Typography - Base sizes for mobile first */
+h1 {
+  font-size: 3rem; /* Smaller base size for mobile */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Simple shadow for all h1 elements */
+}
+
+/* Individual letter hover animation */
+.fw-bold {
+  display: inline-block; /* Needed to make the letter-by-letter effect work */
+}
+
+/* This is a class you'll need to add with JavaScript */
+.letter-animation {
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.letter-animation:hover {
+  transform: translateY(-5px) scale(1.2);
+}
+
+.hero-desc {
+  font-size: 1.2rem; /* Smaller text for mobile */
+  font-weight: 500;
+}
+
+/* Container styles */
+.container {
+  margin: 0 auto; /* Center the container */
+  padding: 0 1rem; /* Add some padding */
+  max-width: 95%; /* Use 95% width as requested */
+}
+
+/* Hero section styles */
+#hero {
+  margin-top: 25vh; /* Use viewport height instead of percentage */
+  z-index: 2;
+  position: relative;
+  width: 100%; /* Ensure full width */
+}
+
+.hero-text {
+  padding-left: 0; /* Remove left padding on mobile */
+  text-align: center; /* Center text on mobile */
+}
+
+#home {
+  position: relative;
+  background: url('assets/hero_background.png') no-repeat center center;
+  background-size: cover;
+  background-position: center 20%; /* Adjust focus point of background */
+  z-index: 0;
+  overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(248, 249, 250 ,0) 40%, rgba(248, 249, 250, 1) 100%);
+  pointer-events: none;
+}
+
+/* Fix for the typewriter effect */
+#typewriter-text {
+  min-height: 3.5rem; /* Prevent layout shift when text changes */
+  display: inline-block;
+}
+
+/* Social icons container */
+.mt-4 {
+  display: flex;
+  justify-content: center; /* Center on mobile */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Button container */
+.mt-5 {
+  display: flex;
+  justify-content: center; /* Center button on mobile */
+}
+
+/* Button styles */
+/* Button styles - keeping the base styles as they are for mobile */
+.btn-primary {
+  background-color: #478888;
+  border-color: #478888;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #2f5f5f;
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .btn-primary {
+    padding: 0.6rem 1.8rem; 
+    font-size: 1.1rem;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) {
+  .btn-primary {
+    padding: 0.7rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .btn-primary {
+    padding: 0.8rem 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* For extra-extra large screens */
+@media (min-width: 1400px) {
+  .btn-primary {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+  }
+}
+
+
+/* Custom Navbar Styles */
+.navbar {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 6%; /* Adjust as needed */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-size: 2rem; /* e.g., 20px */
+  font-weight: bold;
+}
+
+/* 1. Increase navbar height on mobile */
+@media (max-width: 768px) {
+  .navbar {
+    height: 10%; /* Increased height for mobile */
+    padding-top: 0.5%;
+    padding-bottom: 1.5%;
+  }
+}
+
+/* 2. Active section highlighting in navbar */
+.navbar-nav .nav-link.active-section {
+  border: 5px solid #478888;
+  border-radius: 4px;
+}
+
+/* 3. Style for mobile dropdown menu */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.9); /* White with 90% opacity */
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+  
+  /* Set font size for navbar items in mobile dropdown */
+  .navbar-nav .nav-link {
+    font-size: 1rem !important;
+  }
+}
+
+/* 4. Style resume button in navbar to match hero section */
+.navbar-nav .nav-link[href="assets/Veer Prasad (Columbia '27) - Resume.pdf"] {
+  background-color: #478888;
+  color: white !important;
+  border-radius: 4px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link[href="#resume"]:hover {
+  background-color: #2f5f5f;
+}
+
+/* Responsive breakpoints */
+/* Small tablets (portrait) */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .hero-desc {
+    font-size: 1.5rem;
+  }
+  
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  
+  .hero-desc {
+    font-size: 1.7rem;
+  }
+  
+  .hero-text {
+    text-align: left; /* Align text left on medium screens and above */
+  }
+  
+  .mt-4, .mt-5 {
+    justify-content: flex-start; /* Align items to the left on medium screens */
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+  
+  .hero-desc {
+    font-size: 1.8rem;
+  }
+  
+  .hero-text {
+    padding-left: 10%; /* Add some padding on larger screens */
+  }
+  
+  #hero {
+    margin-top: 20vh; /* Adjust vertical positioning on larger screens */
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 7rem; /* Return to your original large size */
+  }
+  
+  .hero-desc {
+    font-size: 2rem;
+  }
+  
+  .hero-text {
+    padding-left: 15%; /* Return to your original padding */
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veer Prasad | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.linkedin.com/in/veer-prasad/" target="_blank">
+        <img src="assets/veer_prasad.jpeg" alt="Veer Prasad" class="rounded-circle" style="width: 72px; height: 72px; object-fit: cover;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item me-3"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="assets/Veer Prasad (Columbia '27) - Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="vh-100 d-flex bg-light">
+    <div class="container" id="hero">
+      <div class="row align-items-center">
+        <!-- Left: Text -->
+        <div class="hero-text text-center text-md-start">
+          <h1 class="fw-bold">Hi, I am <span class="fw-bold">Veer!</span></h1><br>
+          <h1 id="typewriter-text" class="text-primary fw-bold mt-3"></h1>
+          <p class="hero-desc mt-5">
+            I am a sophomore at Columbia University, interested in LLMs and web-app development.<br>
+            Reach out to me at veer.prasad@columbia.edu
+          </p>
+          <div class="mt-4">
+            <!-- Social Icons as placeholders -->
+            <a href="https://www.linkedin.com/in/veer-prasad/" target="_blank"><img src="assets/linkedin.png" alt="icon" class="social-icon" /></a>
+            <a href="https://github.com/veerprasad05" target="_blank"><img src="assets/github.png" alt="icon" class="social-icon" /></a>
+            <a href="mailto:veer.prasad@columbia.edu"><img src="assets/email.png" alt="icon" class="social-icon" /></a>
+            <a href="https://www.instagram.com/veerprasad.05/" target="_blank"><img src="assets/instagram.png" alt="icon" class="social-icon" /></a>
+          </div>
+          <div class="mt-5">
+            <a href="assets/Veer Prasad (Columbia '27) - Resume.pdf" target="_blank" class="btn btn-primary btn-lg">Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5 fw-bold">Projects</h1>
+      
+      <div class="projects-container">
+        <!-- Project cards will be dynamically generated here -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-white">
+    <p class="mb-0">&copy; 2025 Veer Prasad</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="effects.js"></script>
+  <script src="hero.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>
