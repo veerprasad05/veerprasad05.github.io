@@ -87,6 +87,8 @@ h1 {
 #typewriter-text {
   min-height: 2rem;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Social icons container */
